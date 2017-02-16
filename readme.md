@@ -11,3 +11,7 @@ Bounds always x 0 y 0.
 
 - Assistent Editor
 - Markers
+
+## Rate
+
+avaliacaofiap.herokuapp.com
