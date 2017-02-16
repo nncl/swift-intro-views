@@ -15,3 +15,6 @@ Bounds always x 0 y 0.
 ## Rate
 
 avaliacaofiap.herokuapp.com
+
+## Send Email
+proferic.brito@fiap.com.br
