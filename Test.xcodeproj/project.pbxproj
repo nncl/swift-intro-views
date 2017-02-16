@@ -14,6 +14,7 @@
 		AC162B381E54F409003E4F2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC162B361E54F409003E4F2E /* LaunchScreen.storyboard */; };
 		AC162B431E54F409003E4F2E /* TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC162B421E54F409003E4F2E /* TestTests.swift */; };
 		AC162B4E1E54F409003E4F2E /* TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC162B4D1E54F409003E4F2E /* TestUITests.swift */; };
+		AC162B5C1E552596003E4F2E /* StudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC162B5B1E552596003E4F2E /* StudentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		AC162B491E54F409003E4F2E /* TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC162B4D1E54F409003E4F2E /* TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUITests.swift; sourceTree = "<group>"; };
 		AC162B4F1E54F409003E4F2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC162B5B1E552596003E4F2E /* StudentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				AC162B2D1E54F409003E4F2E /* AppDelegate.swift */,
 				AC162B2F1E54F409003E4F2E /* ViewController.swift */,
+				AC162B5B1E552596003E4F2E /* StudentViewController.swift */,
 				AC162B311E54F409003E4F2E /* Main.storyboard */,
 				AC162B341E54F409003E4F2E /* Assets.xcassets */,
 				AC162B361E54F409003E4F2E /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC162B5C1E552596003E4F2E /* StudentViewController.swift in Sources */,
 				AC162B301E54F409003E4F2E /* ViewController.swift in Sources */,
 				AC162B2E1E54F409003E4F2E /* AppDelegate.swift in Sources */,
 			);

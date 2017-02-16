@@ -10,12 +10,37 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK: - IBOutlets
+    @IBOutlet weak var tfUsername: UITextField!
+    @IBOutlet weak var tfPassword: UITextField!
+    
+    // MARK: - Super methods
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // createSubviews()
+        
+        print(view.subviews.count) // Direct child views, 1st level
+        view.viewWithTag(2) // specific element in screen
+        for subview in view.subviews.first!.subviews {
+            print(subview.tag)
+        }
+        
+        // But we do this in the real world:
+        // Create a reference like we do in Android -> findById = IBOutlet for variables, IBActions from a button which exec funcs, derrr
+        tfUsername.text = ""
+        tfPassword.text = ""
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // lets pass data to another view
+        // deve ser tratado como studentviewcontroller...
+        let viewController = segue.destination as! StudentViewController
+        viewController.username = tfUsername.text
+        viewController.password = tfPassword.text
+    }
+    
+    // MARK: - Methods
     func createSubviews() {
         let view2 = UIView(frame: CGRect(x: 0, y: 248, width: 100, height: 180))
         view2.clipsToBounds = true // such as overflow hidden in css
@@ -36,12 +61,29 @@ class ViewController: UIViewController {
         label.textAlignment = .center
         view2.addSubview(label) //o\\
     }
+    
+    // MARK: - IBActions
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func createStudent(_ sender: UIButton) {
+        
+        print("Let's to another screen")
+        
+        performSegue(withIdentifier: "studentSegue", sender: nil)
+        
+        // Log
+        // print("Let's register \(tfUsername.text!) as student with \(tfPassword.text!) as password")
+        
+        // Alert
+        /*
+ let alert = UIAlertController(title: "Success", message: "Let's register \(tfUsername.text!) as student with \(tfPassword.text!) as password", preferredStyle: .alert)
+        
+        let alertOkAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        
+        alert.addAction(alertOkAction)
+        
+        present(alert,animated: true,completion: nil)
+ */
     }
-
 
 }
 
